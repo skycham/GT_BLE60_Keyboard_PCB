@@ -1,0 +1,17 @@
+(module GT (layer F.Cu) (tedit 5BC1E58F)
+  (attr smd)
+  (fp_text reference G*** (at 4.318 -8.128) (layer F.SilkS) hide
+    (effects (font (size 1.524 1.524) (thickness 0.3)))
+  )
+  (fp_text value Geno_logo (at 8.001 7.112) (layer F.SilkS) hide
+    (effects (font (size 1.524 1.524) (thickness 0.3)))
+  )
+  (fp_text user "20`key  keyboard" (at -10.2108 1.63576) (layer B.SilkS)
+    (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+  )
+  (fp_line (start -1.113675 -0.732729) (end -1.113675 3.179613) (layer B.SilkS) (width 1))
+  (fp_line (start 1.172325 -0.986729) (end -2.766722 -0.986729) (layer B.SilkS) (width 1))
+  (fp_line (start 0.029325 0.156271) (end 0.029325 2.061271) (layer B.SilkS) (width 0.8))
+  (fp_line (start 1.934325 0.156271) (end 0.029325 0.156271) (layer B.SilkS) (width 0.8))
+  (fp_arc (start 0.381 0.127) (end 0.127 3.429) (angle -213) (layer B.SilkS) (width 1))
+)

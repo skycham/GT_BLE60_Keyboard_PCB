@@ -1,0 +1,13 @@
+(sym_lib_table
+  (lib (name keyboard-rescue)(type Legacy)(uri ${KIPRJMOD}/keyboard-rescue.lib)(options "")(descr ""))
+  (lib (name aker)(type Legacy)(uri ${KIPRJMOD}/lib/aker.lib)(options "")(descr ""))
+  (lib (name atmega32u4)(type Legacy)(uri ${KIPRJMOD}/lib/atmega32u4.lib)(options "")(descr ""))
+  (lib (name conn)(type Legacy)(uri ${KIPRJMOD}/lib/conn.lib)(options "")(descr ""))
+  (lib (name device)(type Legacy)(uri ${KIPRJMOD}/lib/device.lib)(options "")(descr ""))
+  (lib (name dtsjw)(type Legacy)(uri ${KIPRJMOD}/lib/dtsjw.lib)(options "")(descr ""))
+  (lib (name keyboard_parts)(type Legacy)(uri ${KIPRJMOD}/lib/keyboard_parts.lib)(options "")(descr ""))
+  (lib (name mkl27z256vfm4)(type Legacy)(uri ${KIPRJMOD}/lib/mkl27z256vfm4.lib)(options "")(descr ""))
+  (lib (name mx1a-simple)(type Legacy)(uri ${KIPRJMOD}/lib/mx1a-simple.lib)(options "")(descr ""))
+  (lib (name oupiin_usb)(type Legacy)(uri ${KIPRJMOD}/lib/oupiin_usb.lib)(options "")(descr ""))
+  (lib (name power)(type Legacy)(uri ${KIPRJMOD}/lib/power.lib)(options "")(descr ""))
+)
