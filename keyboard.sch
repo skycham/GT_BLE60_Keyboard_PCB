@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title "lotlab - schematic"
-Date "2019-02-09"
+Title "GT BLE60 - schematic"
+Date "2019-03-01"
 Rev ""
-Comp "lotlab"
+Comp "Geno"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -46,7 +46,7 @@ U 1 1 5867EF56
 P 10700 3750
 F 0 "P2" H 10700 3900 50  0000 C CNN
 F 1 "BATT" V 10800 3750 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 10700 3750 50  0001 C CNN
+F 2 "custom:PinHeader_1x02_P2.54mm_Vertical" H 10700 3750 50  0001 C CNN
 F 3 "" H 10700 3750 50  0000 C CNN
 	1    10700 3750
 	1    0    0    -1  
@@ -264,7 +264,7 @@ Text GLabel 8550 5600 0    60   Input ~ 0
 ADC1
 Text Notes 9150 6450 0    60   ~ 0
 Power
-Text GLabel 9100 4200 2    60   Input ~ 0
+Text GLabel 9200 4200 2    60   Input ~ 0
 VCC
 Text GLabel 7650 5650 1    60   Input ~ 0
 VCC
@@ -418,9 +418,9 @@ F 3 "" H 1850 6100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 3850 5650 2    60   Input ~ 0
-UD-
-Text GLabel 3850 5550 2    60   Input ~ 0
 UD+
+Text GLabel 3850 5550 2    60   Input ~ 0
+UD-
 Text GLabel 2550 5350 0    60   Input ~ 0
 RXD
 Text GLabel 2550 5450 0    60   Input ~ 0
@@ -484,7 +484,7 @@ F 3 "" H 3100 6350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2700 6200 0    60   Input ~ 0
-UD-
+UD+
 Wire Wire Line
 	2700 6200 2850 6200
 Wire Wire Line
@@ -674,7 +674,7 @@ led3
 Text Label 3550 1750 0    50   ~ 0
 led4
 Text Label 3000 1300 1    50   ~ 0
-led5
+DFU
 Entry Wire Line
 	5050 1500 5150 1600
 Entry Wire Line
@@ -851,30 +851,6 @@ F 3 "" H 6050 5500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6200 5500 6300 5500
-$Comp
-L keyboard-rescue:LED-Device LED6
-U 1 1 5A9A1FE2
-P 6450 5850
-F 0 "LED6" H 6450 5750 50  0000 C CNN
-F 1 "LED" H 6442 5686 50  0001 C CNN
-F 2 "custom:MX1A-led" H 6450 5850 50  0001 C CNN
-F 3 "" H 6450 5850 50  0001 C CNN
-	1    6450 5850
-	-1   0    0    1   
-$EndComp
-$Comp
-L keyboard-rescue:R-Device RL6
-U 1 1 5A9A1FE9
-P 6050 5850
-F 0 "RL6" V 5950 5850 50  0000 C CNN
-F 1 "300" V 6050 5850 50  0000 C CNN
-F 2 "0805:0805R" V 5980 5850 50  0001 C CNN
-F 3 "" H 6050 5850 50  0001 C CNN
-	1    6050 5850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6200 5850 6300 5850
 Entry Wire Line
 	5050 4350 5150 4450
 Entry Wire Line
@@ -883,8 +859,6 @@ Entry Wire Line
 	5050 5050 5150 5150
 Entry Wire Line
 	5050 5400 5150 5500
-Entry Wire Line
-	5050 5750 5150 5850
 Text Label 5150 1600 0    50   ~ 0
 row1
 Text Label 5150 1700 0    50   ~ 0
@@ -933,8 +907,6 @@ Text Label 5150 5150 0    50   ~ 0
 led3
 Text Label 5150 5500 0    50   ~ 0
 led4
-Text Label 5150 5850 0    50   ~ 0
-led5
 Wire Wire Line
 	6600 4450 6750 4450
 Wire Wire Line
@@ -963,13 +935,6 @@ Wire Wire Line
 Wire Wire Line
 	6600 5500 6750 5500
 Connection ~ 6750 5500
-Wire Wire Line
-	6750 5500 6750 5850
-Wire Wire Line
-	6600 5850 6750 5850
-Connection ~ 6750 5850
-Wire Wire Line
-	6750 5850 6750 6150
 Text GLabel 2200 900  1    60   Input ~ 0
 ADC1
 Text GLabel 3700 6200 2    60   Input ~ 0
@@ -1015,15 +980,15 @@ Wire Wire Line
 Entry Wire Line
 	1950 1000 2050 1100
 $Comp
-L keyboard-rescue:D-Device D101
+L keyboard-rescue:DIODE-device1 D101
 U 1 1 5AFFEAFC
-P 8950 4200
-F 0 "D101" H 8950 4416 50  0000 C CNN
-F 1 "SS14" H 8950 4325 50  0000 C CNN
-F 2 "0805:0805D" H 8950 4200 50  0001 C CNN
-F 3 "~" H 8950 4200 50  0001 C CNN
-	1    8950 4200
-	1    0    0    -1  
+P 9000 4200
+F 0 "D101" H 9000 4000 50  0000 C CNN
+F 1 "SS14" H 9000 4100 50  0000 C CNN
+F 2 "0805:0805D" H 9000 4200 50  0001 C CNN
+F 3 "~" H 9000 4200 50  0001 C CNN
+	1    9000 4200
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1550 2750 1550 3050
@@ -1101,17 +1066,6 @@ F 3 "" H 5600 5550 60  0000 C CNN
 	1    5550 5550
 	1    0    0    -1  
 $EndComp
-$Comp
-L keyboard_parts:SOLDER_JUMPER SJ6
-U 1 1 5C59C75D
-P 5550 5900
-F 0 "SJ6" H 5550 6050 60  0000 C CNN
-F 1 "SOLDER_JUMPER" H 5600 6050 60  0001 C CNN
-F 2 "custom:2_Pin_Jumper" H 5575 6091 60  0001 C CNN
-F 3 "" H 5600 5900 60  0000 C CNN
-	1    5550 5900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5150 4450 5450 4450
 Wire Wire Line
@@ -1128,10 +1082,6 @@ Wire Wire Line
 	5150 5500 5450 5500
 Wire Wire Line
 	5700 5500 5900 5500
-Wire Wire Line
-	5150 5850 5450 5850
-Wire Wire Line
-	5700 5850 5900 5850
 Entry Wire Line
 	5050 6100 5150 6200
 Wire Wire Line
@@ -1200,6 +1150,42 @@ Wire Notes Line
 	6550 5950 4800 5950
 Text Notes 5350 6800 0    50   ~ 0
 WS2812 RGB
+Wire Wire Line
+	6750 5500 6750 6150
+Entry Wire Line
+	4950 4150 5050 4050
+Wire Wire Line
+	4950 4150 4250 4150
+$Comp
+L Switch:SW_DIP_x01 SW1
+U 1 1 5C794112
+P 3950 4150
+F 0 "SW1" H 3950 4417 50  0000 C CNN
+F 1 "Bootloader Button" H 3950 4326 50  0000 C CNN
+F 2 "dtsm:Switch" H 3950 4150 50  0001 C CNN
+F 3 "" H 3950 4150 50  0001 C CNN
+	1    3950 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4150 3500 4150
+Wire Wire Line
+	3500 4150 3500 4400
+$Comp
+L power:GND #PWR0103
+U 1 1 5C797B47
+P 3500 4400
+F 0 "#PWR0103" H 3500 4400 30  0001 C CNN
+F 1 "GND" H 3500 4330 30  0001 C CNN
+F 2 "" H 3500 4400 50  0001 C CNN
+F 3 "" H 3500 4400 50  0001 C CNN
+	1    3500 4400
+	1    0    0    -1  
+$EndComp
+Text Notes 3750 4500 0    50   ~ 0
+Bootloader Button
+Text Label 4750 4150 0    50   ~ 0
+DFU
 Wire Bus Line
 	1200 3500 3950 3500
 Wire Bus Line
