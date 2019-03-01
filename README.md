@@ -1,5 +1,5 @@
 ﻿# GT_BLE60_Keyboard_PCB
-A 60% bluetooth keyboard PCB by Kicad, Schematic fork of https://github.com/Lotlab/BLE60-keyboard 
+A 60% bluetooth keyboard PCB by Kicad, Schematic fork of https://github.com/Lotlab/BLE60-keyboard  
 一个采用Kicad设计制作的60%蓝牙键盘PCB，原理图参考Lotlab的蓝牙键盘，并基于GH60制作。
 
 **已经验证完成，可以直接打板制作**
@@ -12,3 +12,5 @@ Firmware Source Code/固件源码: [nrf51822-keyboard](https://github.com/genoko
 <img alt="pad图片" src="/preview.png" width="80%"/>
 
 License: CC-BY-SA
+
+More description/详细信息在此查看：[http://genokolar.github.io/blog/201903](http://genokolar.github.io/blog/201903)
